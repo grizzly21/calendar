@@ -1,0 +1,7 @@
+<div class="calendar">
+  <form [formGroup]="createCal" (ngSubmit)="createCalendar()">
+    <input type="number" formControlName="year">
+    <input type="number" formControlName="month">
+    <button type="submit">Генерувати</button>
+  </form>
+</div>
