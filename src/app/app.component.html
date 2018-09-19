@@ -5,3 +5,27 @@
     <button type="submit">Генерувати</button>
   </form>
 </div>
+<table>
+  <thead>
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let day of month">
+      <th>{{day[0]}}</th>
+      <th>{{day[1]}}</th>
+      <th>{{day[2]}}</th>
+      <th>{{day[3]}}</th>
+      <th>{{day[4]}}</th>
+      <th>{{day[5]}}</th>
+      <th>{{day[6]}}</th>
+    </tr>
+  </tbody>
+</table>
